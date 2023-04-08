@@ -8,11 +8,6 @@ img{
 }
 h1 { 
     font-family: 'Abril Fatface','Raleway', 'Noto Sans TC';
-    /* font-size: 24px; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 700; 
-    line-height: 26.4px;  */
 }
 h2,h5{
     text-align: center;
@@ -30,6 +25,7 @@ a{
 #self-picture{
     height: 220px;
     width: 220px;
+    margin-bottom: 30px;
     border: 0 solid cadetblue;
     border-radius: 50%;
     transition: 2s;
@@ -39,10 +35,6 @@ a{
     width: 300px;
     border-radius: 25%;
 } 
-.work-picture{
-    height: 400px;
-    width: 700px;
-}
 nav{
     margin-bottom: 100px;
 }
@@ -51,21 +43,13 @@ nav{
 }
 #education{
     width: 600px;
-    padding: 20px;
-    margin-top: 50px;
-    margin-bottom: 150px;
+    /* padding: 20px; */
 }
 @media(max-width:700px){
     #introduction h1{
         font-size: 3rem;
     }
 }
-/* when screen rotation */
-/* @media(orientation:landscape) and (min-width){
-    body{
-        background-color:bisque;
-    }
-} */
 .head{
     background-color:#A1CBB0;
     height: 600px;
@@ -136,4 +120,56 @@ hr{
 }
 .foot{
     padding: 30px;
+}
+
+.title span {
+	--total: calc(var(--duration) + var(--delay));
+	position: relative;
+	display: block;
+	color: transparent;
+	overflow: hidden;
+	animation: reveal 1s var(--total) forwards;
+}
+.title span::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: scaleX(0);
+	transform-origin: left;
+	background-color:#D7EFE0;
+	animation: rollIn var(--duration) var(--delay) forwards,
+		rollOut var(--duration) var(--total) forwards;
+}
+.title span:nth-child(2)::after {
+	border-top: 3px solid #D7EFE0;
+}
+@keyframes reveal {
+	to {
+		color: #fff;
+	}
+}
+@keyframes rollIn {
+	from {
+		transform: scaleX(0);
+	}
+	to {
+		transform: scaleX(1);
+	}
+}
+@keyframes rollOut {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(105%);
+	}
+}
+.ex{
+    padding: 25px;
+}
+.others{
+    padding: 25px;
 }
