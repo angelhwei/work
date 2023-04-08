@@ -1,0 +1,139 @@
+body{
+    font-family: 'Raleway', 'Noto Sans TC';
+    background-color: #F6F3EA;
+}
+img{
+    position: relative;
+    padding: 10px;
+}
+h1 { 
+    font-family: 'Abril Fatface','Raleway', 'Noto Sans TC';
+    /* font-size: 24px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px;  */
+}
+h2,h5{
+    text-align: center;
+    color:#473724;
+    padding-bottom: 50px;
+}
+h3,h4{
+    color:#473724;
+}
+a{
+    color: #0d7a7d;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+#self-picture{
+    height: 220px;
+    width: 220px;
+    border: 0 solid cadetblue;
+    border-radius: 50%;
+    transition: 2s;
+}
+#self-picture:hover{
+    height: 300px;
+    width: 300px;
+    border-radius: 25%;
+} 
+.work-picture{
+    height: 400px;
+    width: 700px;
+}
+nav{
+    margin-bottom: 100px;
+}
+#mainNavbar .nav-link:hover{
+    color: brown;
+}
+#education{
+    width: 600px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+@media(max-width:700px){
+    #introduction h1{
+        font-size: 3rem;
+    }
+}
+/* when screen rotation */
+/* @media(orientation:landscape) and (min-width){
+    body{
+        background-color:bisque;
+    }
+} */
+.head{
+    background-color:#A1CBB0;
+    height: 600px;
+    text-align: center;
+    margin-bottom: 20px;
+    color:#473724;
+}
+.headword{
+    /* margin: 20px; */
+    position: relative;;
+    padding-top:150px;
+    display: inline-block;
+}
+#headpic{
+    text-align: center;
+    position: relative;
+    padding-top: 10px;
+}
+#headpic2{
+    position: absolute;
+    padding-left: 200px;
+    transform: rotate(-20deg)
+}
+#headpic3{
+    position: absolute;
+    padding-left: 1100px;
+    padding-top: 50px;
+    /* transform: rotate(20deg) */
+}
+.aboutMe{
+    padding-top: 100px;
+    text-align: center;
+}
+th{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color:#473724;
+    font-size: 1.25rem;
+}
+.skill{
+    text-align: center;
+}
+.skillTable{
+    padding-top: 20px;
+}
+footer{
+    margin-top: 100px;
+    width: auto;
+    height: 150px;
+    background-color:#A1CBB0;
+    text-align: center;
+    padding: 20px;
+}
+a:hover{
+    color: #EAF6F6;
+    text-decoration: none;
+}
+hr{
+    border:dotted #A1CBB0;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+.copyright{
+    color: #EAF6F6;
+    font-size: 0.75rem;
+    padding-top: 10px;
+}
+.foot{
+    padding: 30px;
+}
