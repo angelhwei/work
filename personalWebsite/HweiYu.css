@@ -6,6 +6,10 @@ img{
     position: relative;
     padding: 10px;
 }
+.project-img{
+    opacity: 0;
+    transition: opacity 2s;
+}
 h1 { 
     font-family: 'Abril Fatface','Raleway', 'Noto Sans TC';
 }
