@@ -31,7 +31,7 @@
                     <defs>
                         <path
                             id="wave"
-                            fill="rgba(125, 190, 230, 0.6)"
+                            fill="rgba(44,65,46,0.1)"
                             d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
           s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z"
                         />
@@ -80,20 +80,15 @@
                 </svg>
             </div>
         </div>
-        <!-- <svg id="head-bg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path
-                fill="#0099ff"
-                fill-opacity="1"
-                d="M0,192L34.3,208C68.6,224,137,256,206,234.7C274.3,213,343,139,411,138.7C480,139,549,213,617,224C685.7,235,754,181,823,181.3C891.4,181,960,235,1029,213.3C1097.1,192,1166,96,1234,64C1302.9,32,1371,64,1406,80L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"
-            ></path>
-        </svg> -->
+
         <div class="head">
             <p>Hello, I'm Angel.</p>
+            <img src="./photo/boat.png" alt="">
         </div>
 
         <div class="container">
             <div class="left-side">
-                <div class="left-side-container">
+                <div class="left-side-container bg">
                     <img class="square-img" id="selfie" src="./photo/IMG_7868.jpg" alt="" />
                     <div class="profile-container">
                         <h3>Hwei Yu Zeng</h3>
@@ -145,7 +140,7 @@
 
                         <div class="personal-info">
                             <div class="info-item">
-                                <div class="item-icon">
+                                <div class="info-item-icon">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 384 512"
@@ -163,7 +158,7 @@
                                 </div>
                             </div>
                             <div class="info-item">
-                                <div class="item-icon">
+                                <div class="info-item-icon">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 512 512"
@@ -181,7 +176,7 @@
                                 </div>
                             </div>
                             <div class="info-item">
-                                <div class="item-icon">
+                                <div class="info-item-icon">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 512 512"
@@ -199,7 +194,7 @@
                                 </div>
                             </div>
                             <div class="info-item">
-                                <div class="item-icon">
+                                <div class="info-item-icon">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 448 512"
@@ -221,7 +216,7 @@
                 </div>
             </div>
 
-            <div class="bg center">
+            <div class="center bg">
                 <section id="profile">
                     <h1>About Me</h1>
                     <div class="intro-container">
@@ -229,8 +224,8 @@
                             <div class="long-text">
                                 Hello, I'm Hwei Yu! You can call me Angel. <br />
                                 I am a software developer who is passionate about web development
-                                and app development. Enjoy challenging myself and learning new
-                                things. Appreciate beautiful things, have a bit of perfectionism,
+                                and app development. Enjoy <mark>challenging myself</mark> and <mark>learning new
+                                things</mark>. Appreciate beautiful things, have a bit of perfectionism,
                                 and strive to balance my pursuits with practical needs to achieve
                                 the best results. <br />
                                 Currently study in the Department of Information Management at
@@ -256,7 +251,7 @@
                                     </span>
                                     <span>Web Development</span>
                                 </div>
-                                <p>
+                                <p class="expain-item-text">
                                     Develop web applications with Angular, Vue, and Node.js.
                                     Familiar with RESTful API and D3.js.
                                 </p>
@@ -277,7 +272,9 @@
                                     </span>
                                     <span>App Development</span>
                                 </div>
-                                <p>Develop mobile applications with Android Studio and PWA.</p>
+                                <p class="expain-item-text">
+                                    Develop mobile applications with Android Studio and PWA.
+                                </p>
                             </div>
                             <div class="expertise-item text-card">
                                 <div class="expertise-title">
@@ -295,7 +292,7 @@
                                     </span>
                                     <span>Database management</span>
                                 </div>
-                                <p>
+                                <p class="expain-item-text">
                                     Familiar with MySQL and MongoDB, and have experience in database
                                     design and management.
                                 </p>
@@ -316,7 +313,7 @@
                                     </span>
                                     <span>UI/UX Design</span>
                                 </div>
-                                <p>
+                                <p class="expain-item-text">
                                     Designing user interfaces and user experiences for web and
                                     mobile applications.
                                 </p>
@@ -498,10 +495,12 @@
                                     </span>
                                     <span>Languages</span>
                                 </div>
-                                <ul>
-                                    <li>Chinese｜Mother language</li>
-                                    <li>English｜TOEIC 780</li>
-                                </ul>
+                                <div class="expain-item-text">
+                                    <ul>
+                                        <li>Chinese｜Mother language</li>
+                                        <li>English｜TOEIC 780</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="others-item text-card">
                                 <div class="expertise-title">
@@ -519,10 +518,12 @@
                                     </span>
                                     <span>Certificates</span>
                                 </div>
-                                <ul>
-                                    <li>Planner of Enterprise Resource Planning</li>
-                                    <li>Google Analytics</li>
-                                </ul>
+                                <div class="expain-item-text">
+                                    <ul>
+                                        <li>Planner of Enterprise Resource Planning</li>
+                                        <li>Google Analytics</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="others-item text-card">
                                 <div class="expertise-title">
@@ -540,14 +541,16 @@
                                     </span>
                                     <span>Extracurricular</span>
                                 </div>
-                                <ul>
-                                    <li>2024 Data Structure and Algorithm Course(Java)｜TA</li>
-                                    <li>2023 Business Analysis Course｜TA</li>
-                                    <li>2023 Web Programming Course｜TA</li>
-                                    <li>2023 ​資管迎新宿營｜美宣長</li>
-                                    <li>2021 Basic Programming Course(Python)｜TA</li>
-                                    <li>2017-2021 ​資管系排｜舉球員</li>
-                                </ul>
+                                <div class="expain-item-text">
+                                    <ul>
+                                        <li>2024 Data Structure and Algorithm Course(Java)｜TA</li>
+                                        <li>2023 Business Analysis Course｜TA</li>
+                                        <li>2023 Web Programming Course｜TA</li>
+                                        <li>2023 ​資管迎新宿營｜美宣長</li>
+                                        <li>2021 Basic Programming Course(Python)｜TA</li>
+                                        <li>2017-2021 ​資管系排｜舉球員</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -592,7 +595,7 @@
                         <div class="expertise-item text-card">
                             <span class="exp-title">Research of Even Swap Strategy</span>
                             <span class="date">Feb 2024 - Now</span>
-                            <p>
+                            <p class="expain-item-text">
                                 Develop a web application for the Even Swap Strategy, helping
                                 quickly find the best decision.
                             </p>
@@ -600,7 +603,7 @@
                         <div class="expertise-item text-card">
                             <span class="exp-title">Research of Parallel Coordinate Graphic</span>
                             <span class="date">Apr 2023 - May 2023</span>
-                            <p>Assist in the research of parallel coordinate graphics.</p>
+                            <p class="expain-item-text">Assist in the research of parallel coordinate graphics.</p>
                         </div>
                     </div>
 
@@ -781,8 +784,8 @@
                                 <h3>FADO - Clothes DBS</h3>
                                 <p>
                                     Solve the problem of manual inventory recording by store owners;
-                                    save the time of recording with paper and pen;
-                                    help store owners analyze sales volume to set marketing strategies.
+                                    save the time of recording with paper and pen; help store owners
+                                    analyze sales volume to set marketing strategies.
                                 </p>
                                 <small>Tech: Visual Basic、Access、SQL</small>
                             </div>
@@ -796,7 +799,8 @@
                                 <p>
                                     Promote the food and scenery of Chiayi Zhuzaki Township, so that
                                     tourists who want to travel to Zhuzaki can understand the local
-                                    characteristics through this website to plan their travel itinerary.
+                                    characteristics through this website to plan their travel
+                                    itinerary.
                                 </p>
                                 <small>Tech: HTML、CSS、JavaScript</small>
                             </div>
@@ -887,7 +891,12 @@
                                 name="message"
                                 rows="4"
                                 required
-                                style="max-width: 100%"
+                                style="
+                                    min-width: 100%;
+                                    max-width: 100%;
+                                    min-height: 100px;
+                                    max-height: 300px;
+                                "
                             ></textarea
                             ><br />
                             <div id="submit">
@@ -899,7 +908,7 @@
             </div>
 
             <div class="right-side">
-                <div class="navbar-container">
+                <div class="navbar-container bg">
                     <nav>
                         <div class="nav-items">
                             <a class="nav-text" href="#profile" data-target="profile">
@@ -943,10 +952,6 @@
                                 </svg>
                                 <span class="nav-item material-symbols-outlined">Projects</span>
                             </a>
-
-                            <!-- <a class="nav-text" href="#skills" data-target="skills">
-                                <span class="nav-item material-symbols-outlined">Skills</span>
-                            </a> -->
 
                             <a class="nav-text" href="#contact" data-target="contact">
                                 <svg
