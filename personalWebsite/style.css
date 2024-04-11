@@ -46,8 +46,9 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
-    margin-top: 4rem;
+    margin-top: 4.5rem;
     margin-bottom: 2rem;
+    font-weight: bold;
 }
 
 h3 {
@@ -207,6 +208,14 @@ mark {
     transition: all 0.3s;
     display: grid;
     place-items: center;
+}
+
+svg{
+    fill: #252422;
+}
+
+section svg {
+    fill: #fff; 
 }
 
 .info-item-text {
@@ -589,6 +598,10 @@ textarea {
     background-color: #d67d60;
     color: #fff;
     transition: all 0.3s;
+}
+
+.nav-items a:hover svg {
+    fill: #fff; /* Change to the color you want */
 }
 
 footer {
