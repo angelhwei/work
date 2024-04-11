@@ -140,10 +140,10 @@ mark {
 }
 
 .square-img {
-    width: min(25vw, 12rem);
+    width: min(25vw, 10rem);
     height: auto;
     box-sizing: border-box;
-    border-radius: 2em;
+    border-radius: 1.5em;
     overflow: hidden;
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
     transform: translatey(0px);
