@@ -14,16 +14,16 @@ button {
     letter-spacing: 2px;
     line-height: 1.3;
     scroll-behavior: smooth;
-    font-family: 'Outfit', sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
     /* overflow: hidden; */
     /* background-color: #252422; */
 }
 
 * {
     box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .bg {
@@ -48,6 +48,12 @@ h2 {
     font-size: 1.5rem;
     margin-top: 4rem;
     margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin: 0;
 }
 
 hr {
@@ -125,7 +131,7 @@ mark {
     position: sticky;
     top: 0;
     width: 25vw;
-    height: 95vh;
+    height: 100vh;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -133,14 +139,15 @@ mark {
 }
 
 .square-img {
-    width: min(20vw, 12rem);
+    width: min(25vw, 12rem);
+    height: auto;
     box-sizing: border-box;
     border-radius: 2em;
     overflow: hidden;
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
     transform: translatey(0px);
     animation: float 6s ease-in-out infinite;
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 
 .profile-container {
@@ -152,23 +159,23 @@ mark {
 }
 
 #position-title {
-    width: calc(100% - 10%);
+    width: fit-content;
     min-width: 200px;
-    max-width: 500px;
     font-weight: bold;
     background-color: #d67d60;
     color: #fff;
-    padding: 0.5rem 0;
-    border-radius: 1em;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    margin: 1rem 0;
 }
 
 .personal-info {
-    width: calc(100% - 10%);
-    min-width: 300px;
+    width: 100%;
+    /* min-width: 200px; */
     max-width: 500px;
     border-radius: 2em;
     background-color: rgba(44, 65, 46, 0.4);
-    margin-top: 3rem;
+    margin-top: 1rem;
     padding: 0.5rem 0rem;
     color: #fff;
 }
@@ -250,15 +257,34 @@ mark {
 }
 
 .github:hover {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(214, 125, 96, 0.8);
 }
 
 .linkedin:hover {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(214, 125, 96, 0.8);
 }
 
 .mail:hover {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(214, 125, 96, 0.8);
+}
+
+#download-btn{
+    width: fit-content;
+    /* min-width: 200px; */
+    min-width: 200px;
+    background-color: #d67d60;
+    color: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#download-btn:hover {
+    background-color: #fff;
+    color: #d67d60;
+    transition: all 0.3s;
 }
 
 .center {
@@ -500,13 +526,19 @@ textarea {
 }
 
 #submit input {
-    width: 25%;
+    min-width: 150px;
     float: right;
     background-color: #d67d60;
     color: #fff;
     border-radius: 1rem;
     padding: 0.5rem;
     cursor: pointer;
+}
+
+#submit input:hover {
+    background-color: #fff;
+    color: #d67d60;
+    transition: all 0.3s;
 }
 
 .text-card:hover {
@@ -555,6 +587,7 @@ textarea {
 
 .nav-items a:hover {
     background-color: #d67d60;
+    color: #fff;
     transition: all 0.3s;
 }
 
@@ -671,8 +704,16 @@ footer {
         height: 50vh;
     }
 
+    .info-item-text{
+        font-size: 0.6em;
+    }
+
     .skills-item-container {
         width: 100%;
+    }
+
+    .expertise-title, .exp-title{
+        font-size: 1rem;
     }
 
     .expertise-item {
