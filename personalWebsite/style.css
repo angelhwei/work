@@ -52,7 +52,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 800;
     margin: 0;
 }
@@ -499,11 +499,14 @@ section svg {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    font-size: clamp(0.5rem, 0.8rem, 1rem);
     color: #fff;
     text-align: center;
     transition: 0.4s ease-in-out;
     z-index: 1;
+}
+
+.content p{
+    font-size: clamp(0.5em, 0.8em, 1em);
 }
 
 .card:hover .content {
@@ -511,7 +514,6 @@ section svg {
 }
 
 .click {
-    font-size: 1rem;
     font-weight: bold;
     color: aquamarine;
     text-align: center;
@@ -704,6 +706,18 @@ footer {
         height: fit-content;
     }
 
+    .content h3{
+        font-size: 0.8em;
+    }
+
+    .content p{
+        font-size: 0.6em;
+    }
+
+    .content small{
+        font-size: 0.5em;
+    }
+
     .nav-items {
         flex-direction: row;
         gap: 1rem;
@@ -774,6 +788,18 @@ footer {
 
     .card {
         width: 100%;
+    }
+
+    .content h3{
+        font-size: 0.8em;
+    }
+
+    .content p{
+        font-size: 0.6em;
+    }
+
+    .content small{
+        font-size: 0.5em;
     }
 
     .navbar-container {
