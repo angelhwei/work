@@ -210,12 +210,12 @@ mark {
     place-items: center;
 }
 
-svg{
+svg {
     fill: #252422;
 }
 
 section svg {
-    fill: #fff; 
+    fill: #fff;
 }
 
 .info-item-text {
@@ -277,7 +277,7 @@ section svg {
     background-color: rgba(214, 125, 96, 0.8);
 }
 
-#download-btn{
+#download-btn {
     width: fit-content;
     /* min-width: 200px; */
     min-width: 200px;
@@ -429,7 +429,7 @@ section svg {
 }
 
 .exp-item {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .exp-title {
@@ -505,7 +505,7 @@ section svg {
     z-index: 1;
 }
 
-.content p{
+.content p {
     font-size: clamp(0.5em, 0.8em, 1em);
 }
 
@@ -706,15 +706,15 @@ footer {
         height: fit-content;
     }
 
-    .content h3{
+    .content h3 {
         font-size: 0.8em;
     }
 
-    .content p{
+    .content p {
         font-size: 0.6em;
     }
 
-    .content small{
+    .content small {
         font-size: 0.5em;
     }
 
@@ -761,7 +761,7 @@ footer {
         margin: 1rem 0;
     }
 
-    .info-item-text{
+    .info-item-text {
         font-size: 0.6em;
     }
 
@@ -769,7 +769,8 @@ footer {
         width: 100%;
     }
 
-    .expertise-title, .exp-title{
+    .expertise-title,
+    .exp-title {
         font-size: 1rem;
     }
 
@@ -790,15 +791,15 @@ footer {
         width: 100%;
     }
 
-    .content h3{
+    .content h3 {
         font-size: 0.8em;
     }
 
-    .content p{
+    .content p {
         font-size: 0.6em;
     }
 
-    .content small{
+    .content small {
         font-size: 0.5em;
     }
 
